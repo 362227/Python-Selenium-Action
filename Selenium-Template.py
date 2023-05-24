@@ -111,6 +111,8 @@ with open('users.txt', 'r') as f:
             print(rss_feed)
             with open(f'./{author}-tiktok.xml', 'w', encoding='utf-8') as f:
                f.write(rss_feed)
+            with open(f'./temp/{author}-tiktok.html', 'w', encoding='utf-8') as f:
+               f.write(rss_feed)
 
         else:
             now = datetime.now()
